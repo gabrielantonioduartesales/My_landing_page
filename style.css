@@ -25,7 +25,7 @@
  .parallax {
      height: 100vh;
      background: linear-gradient(rgba(42, 42, 60, 0.8), rgba(42, 42, 60, 0.8)),
-         url('http://static.photos/technology/1200x630/5') no-repeat center center;
+         url('img/img_found.jpeg') no-repeat center center;
      background-size: cover;
      background-attachment: fixed;
      display: flex;
@@ -213,6 +213,58 @@
      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
  }
 
+ .registers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+ }
+
+ .imgs_info{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+ }
+
+ .imgs_info>div{
+    width: 100%;
+    flex: 0 0 auto;
+    animation: slider_regs 20s infinite linear;
+ }
+
+ @keyframes slider_regs{
+    20%{
+        transform: translateX(0);
+    }
+
+    40%{
+        transform: translateX(-100);
+    }
+    
+    60%{
+        transform: translateX(-200);
+    }
+
+    80%{
+        transform: translateX(-300);
+    }
+
+    100%{
+        transform: translateX(-400%);
+    }
+ }
+
+ .imgs_info>div>h5{
+    font-size: 0.5rem;
+ }
+
+ .imgs_info>div>img{
+    width: 100%;
+    border-radius: 15px;
+ }
+
  .about-img img {
      width: 100%;
      height: auto;
@@ -224,7 +276,7 @@
      min-width: 300px;
  }
 
- .about-text h3 {
+ .about-text h3, .registers>h3 {
      font-size: 1.8rem;
      margin-bottom: 20px;
      color: var(--dark);
@@ -371,7 +423,7 @@
      align-items: center;
      white-space: nowrap;
      will-change: transform;
-     animation: ticker-scroll 20s linear infinite;
+     animation: ticker-scroll 40s linear infinite;
  }
 
  @keyframes ticker-scroll {
