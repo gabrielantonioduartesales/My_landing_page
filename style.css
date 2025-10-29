@@ -68,6 +68,24 @@
      animation: fadeIn 2.5s ease-in-out;
  }
 
+ .btn_download{
+    animation: pulse 2s linear infinite;
+ }
+
+ @keyframes pulse {
+    0%{
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+ }
+
  .btn:hover {
      background-color: var(--secondary);
      transform: translateY(-3px);
@@ -161,6 +179,7 @@
  section {
      padding: 5%;
  }
+
  .container {
      max-width: 1200px;
      margin: 0 auto;
@@ -207,68 +226,130 @@
 
  .about-img {
      flex: 1;
-     min-width: 300px;
+     display: inline-flex;
+     justify-content: center;
+     width: auto;
      border-radius: 10px;
      overflow: hidden;
-     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+     /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
  }
 
- .registers{
+ .registers {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 2%;
+ }
+
+
+ .carousel-container {
+     position: relative;
+     width: 70%;
+     overflow: hidden;
+     border-radius: 15px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .carousel {
+     display: flex;
+     transition: transform 0.5s ease;
+ }
+
+ .item {
+     min-width: 100%;
+     text-align: center;
+     background: #fff;
+ }
+
+ .item img {
+     width: 100%;
+     display: block;
+ }
+
+ .item h5 {
+     background: #222;
+     color: #fff;
+     margin: 0;
+     padding: 10px;
+ }
+
+ .ident{
+    margin-left: 40px;
+ }
+
+ .institution_certi{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 2%;
+    gap: 2%;
  }
 
- .imgs_info{
-    width: 80%;
-    height: 50vh;
-    display: flex;
-    overflow: hidden;
-    scroll-behavior: smooth;
+ .certificate_img{
+    width: 100% !important;
+    transition: all 0.3s ease;
  }
 
- .imgs_info>div{
-    width: 100%;
-    flex: 0 0 auto;
-    animation: slider_regs 20s infinite linear;
+ .img_icons{
+    height: 5vh;
+    border-radius: 10px;
  }
 
- @keyframes slider_regs{
-    20%{
-        transform: translateX(0);
-    }
-
-    40%{
-        transform: translateX(-100);
-    }
-    
-    60%{
-        transform: translateX(-200);
-    }
-
-    80%{
-        transform: translateX(-300);
-    }
-
-    100%{
-        transform: translateX(-400%);
-    }
+ .certificate_img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
  }
 
- .imgs_info>div>h5{
-    font-size: 0.5rem;
+ .arrow {
+     position: absolute;
+     top: 50%;
+     background-color: transparent;
+     transform: translateY(-50%);
+     color: white;
+     border: none;
+     font-size: 30px;
+     padding: 5px 10px;
+     cursor: pointer;
+     z-index: 2;
+    transition: ease;
  }
 
- .imgs_info>div>img{
-    width: 100%;
-    border-radius: 15px;
+ .arrow:hover {
+    scale: 1.2;
  }
+
+ #left_bt {
+     left: 10px;
+ }
+
+ #right_bt {
+     right: 10px;
+ }
+
+ .dots {
+     text-align: center;
+     margin-top: 10px;
+ }
+
+ .dot {
+     height: 10px;
+     width: 10px;
+     margin: 0 5px;
+     display: inline-block;
+     border-radius: 50%;
+     background-color: #bbb;
+     cursor: pointer;
+ }
+
+ .dot.active {
+     background-color: #333;
+ }
+
 
  .about-img img {
-     width: 100%;
+     width: 70%;
      height: auto;
      display: block;
+     border-radius: 25px;
  }
 
  .about-text {
@@ -276,7 +357,8 @@
      min-width: 300px;
  }
 
- .about-text h3, .registers>h3 {
+ .about-text h3,
+ .registers>h3 {
      font-size: 1.8rem;
      margin-bottom: 20px;
      color: var(--dark);
@@ -336,7 +418,7 @@
  .timeline-item {
      padding: 10px 40px;
      position: relative;
-     width: 50%;
+     width: 80%;
      box-sizing: border-box;
  }
 
@@ -353,7 +435,7 @@
  }
 
  .left {
-     left: 0;
+     left: -30%;
  }
 
  .right {
@@ -558,6 +640,7 @@
      background-color: white;
      border-radius: 10px;
      padding: 20px;
+     padding-bottom: 5%;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
      max-width: 350px;
      transition: all 0.3s ease;
@@ -576,6 +659,10 @@
  .certificate-card p {
      color: #666;
      margin-bottom: 15px;
+ }
+
+ .cert_desc{
+    height: 20%;
  }
 
  .certificate-card a {
@@ -720,8 +807,18 @@
      animation-delay: 0.9s;
  }
 
+ .delay-4 {
+     animation-delay: 12s;
+ }
+
+  .delay-5 {
+     animation-delay: 15s;
+ }
+
  /* Responsive */
- @media (max-width: 768px) {
+ @media (orientation: portrait) {
+    
+
      .nav-links {
          position: fixed;
          top: 80px;

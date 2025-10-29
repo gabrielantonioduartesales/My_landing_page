@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+
 </head>
 
 <body>
@@ -76,28 +77,33 @@
             </div>
             <div class="registers">
                 <h3>Um pouquinho dos registros</h3>
-                <div class="imgs_info">
-                    <div>
-                        <img src="img/radio.png" alt="">
-                        <h5>Palestra na rádio sobre cursos</h5>
+                <div class="carousel-container">
+                    <button id="left_bt" class="arrow">&#10094;</button>
+
+                    <div class="carousel">
+                        <div class="item">
+                            <img src="img/radio.png" alt="">
+                            <h5>Palestra na rádio sobre cursos</h5>
+                        </div>
+                        <div class="item">
+                            <img src="img/web.png" alt="">
+                            <h5>Turma formada em programador Web</h5>
+                        </div>
+                        <div class="item">
+                            <img src="img/tec.png" alt="">
+                            <h5>Turma técnico em informática</h5>
+                        </div>
+                        <div class="item">
+                            <img src="img/manu.png" alt="">
+                            <h5>Turma manutenção de computadores</h5>
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/web.png" alt="">
-                        <h5>Turma formada em programador Web</h5>
-                    </div>
-                    <div>
-                        <img src="img/tec.png" alt="">
-                        <h5>Turma técnico em informática</h5>
-                    </div>
-                    <div>
-                        <img src="img/manu.png" alt="">
-                        <h5>Turma manutenção de computadores</h5>
-                    </div>
-                    <div>
-                        <img src="img/radio.png" alt="">
-                        <h5>Palestra na rádio sobre cursos</h5>
-                    </div>
+
+                    <button id="right_bt" class="arrow">&#10095;</button>
+
+                    <div class="dots"></div>
                 </div>
+
             </div>
 
         </div>
@@ -130,41 +136,7 @@
                 <h2>Experiência Profissional</h2>
                 <p>Minha jornada profissional até o momento</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item left fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <i data-feather="calendar" style="margin-right: 5px;"></i> 2022 - Presente
-                        </div>
-                        <h3>Desenvolvedor Full-Stack</h3>
-                        <h4>Empresa Tech</h4>
-                        <p>Desenvolvimento e manutenção de aplicações web utilizando React, Node.js e MongoDB.
-                            Participação ativa em todo o ciclo de vida do desenvolvimento de software.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right fade-in delay-1">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <i data-feather="calendar" style="margin-right: 5px;"></i> 2020 - 2022
-                        </div>
-                        <h3>Desenvolvedor Front-End</h3>
-                        <h4>Agência Digital</h4>
-                        <p>Criação de interfaces de usuário responsivas e interativas. Trabalho em conjunto com
-                            designers para implementar layouts pixel-perfect.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left fade-in delay-2">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <i data-feather="calendar" style="margin-right: 5px;"></i> 2018 - 2020
-                        </div>
-                        <h3>Estagiário em Desenvolvimento</h3>
-                        <h4>Startup Inovadora</h4>
-                        <p>Aprendizado prático com desenvolvimento web, participação em projetos reais e mentoria com
-                            desenvolvedores seniors.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="timeline jobs_timeline"></div>
         </div>
     </section>
 
@@ -175,30 +147,7 @@
                 <h2>Formação Acadêmica</h2>
                 <p>Minha jornada de aprendizado formal</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item left fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <i data-feather="calendar" style="margin-right: 5px;"></i> 2016 - 2020
-                        </div>
-                        <h3>Bacharelado em Ciência da Computação</h3>
-                        <h4>Universidade Federal</h4>
-                        <p>Formação com foco em desenvolvimento de software, algoritmos e estruturas de dados.
-                            Participação em projetos de pesquisa e extensão.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right fade-in delay-1">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <i data-feather="calendar" style="margin-right: 5px;"></i> 2020 - 2021
-                        </div>
-                        <h3>Pós-graduação em Desenvolvimento Web</h3>
-                        <h4>Instituto Tecnológico</h4>
-                        <p>Especialização em tecnologias modernas para desenvolvimento web full-stack, incluindo
-                            frameworks JavaScript e arquitetura de software.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="timeline education_timeline"></div>
         </div>
     </section>
 
@@ -209,32 +158,7 @@
                 <h2>Certificados</h2>
                 <p>Certificações que adquiri ao longo da minha carreira</p>
             </div>
-            <div class="certificates-container">
-                <div class="certificate-card fade-in">
-                    <h3>Desenvolvedor Web Full Stack</h3>
-                    <p><strong>Instituição:</strong> Udemy</p>
-                    <p><strong>Ano:</strong> 2021</p>
-                    <p>Certificado completo abrangendo front-end e back-end com projetos práticos.</p>
-                    <a href="#" download>Baixar Certificado <i data-feather="download"
-                            style="margin-left: 5px;"></i></a>
-                </div>
-                <div class="certificate-card fade-in delay-1">
-                    <h3>React Avançado</h3>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <p><strong>Ano:</strong> 2022</p>
-                    <p>Curso avançado de React cobrindo hooks avançados, context API e performance.</p>
-                    <a href="#" download>Baixar Certificado <i data-feather="download"
-                            style="margin-left: 5px;"></i></a>
-                </div>
-                <div class="certificate-card fade-in delay-2">
-                    <h3>Node.js e MongoDB</h3>
-                    <p><strong>Instituição:</strong> Rocketseat</p>
-                    <p><strong>Ano:</strong> 2020</p>
-                    <p>Desenvolvimento de APIs RESTful com Node.js e bancos de dados NoSQL.</p>
-                    <a href="#" download>Baixar Certificado <i data-feather="download"
-                            style="margin-left: 5px;"></i></a>
-                </div>
-            </div>
+            <div class="certificates-container"></div>
         </div>
     </section>
 
@@ -310,15 +234,16 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <h2 class="fade-in">[Seu Nome]</h2>
-            <p class="fade-in delay-1">Desenvolvedor Full-Stack</p>
+            <h2 class="fade-in">Gabriel Antonio</h2>
+            <p class="fade-in delay-1">Professor e Desenvolvedor Full-Stack</p>
             <ul class="social-links fade-in delay-2">
-                <li><a href="#" aria-label="GitHub"><i data-feather="github"></i></a></li>
-                <li><a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a></li>
-                <li><a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a></li>
+                <li><a href="https://github.com/gabrielantonioduartesales" aria-label="GitHub"><i data-feather="github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-antonio-4ba035214/" aria-label="LinkedIn"><i data-feather="linkedin"></i></a></li>
+                <li><a href="https://wa.me/5531982448518?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Precisamos%20conversar!" aria-label="WhatsApp"><i data-feather="phone"></i></a></li>
+                <!-- <li><a href="" aria-label="Instagram"><i data-feather="instagram"></i></a></li> -->
             </ul>
             <div class="download-cv fade-in delay-3">
-                <a href="#" class="btn" download>Baixar Currículo</a>
+                <a target="_blank" href="https://wa.me/5531982448518?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Precisamos%20conversar!" class="btn btn_download" download>Vamos conversar?</a>
             </div>
             <p class="fade-in delay-3" style="margin-top: 30px;">© 2025 GA. Todos os direitos reservados.</p>
         </div>
@@ -399,6 +324,8 @@
             contactForm.reset();
         });
     </script>
+
+
 </body>
 
 </html>
