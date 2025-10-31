@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -211,19 +211,19 @@
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" class="form-control" required>
+                        <input type="text" name="name_user" id="name" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <input type="email" name="email_user" id="email" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Assunto</label>
-                        <input type="text" id="subject" class="form-control" required>
+                        <input type="text" id="subject" name="subject_user" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensagem</label>
-                        <textarea id="message" class="form-control" required></textarea>
+                        <textarea id="message" class="form-control" name="msg_user" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Enviar Mensagem</button>
                 </form>
@@ -237,95 +237,28 @@
             <h2 class="fade-in">Gabriel Antonio</h2>
             <p class="fade-in delay-1">Professor e Desenvolvedor Full-Stack</p>
             <ul class="social-links fade-in delay-2">
-                <li><a href="https://github.com/gabrielantonioduartesales" aria-label="GitHub"><i data-feather="github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/gabriel-antonio-4ba035214/" aria-label="LinkedIn"><i data-feather="linkedin"></i></a></li>
-                <li><a href="https://wa.me/5531982448518?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Precisamos%20conversar!" aria-label="WhatsApp"><i data-feather="phone"></i></a></li>
+                <li><a href="https://github.com/gabrielantonioduartesales" aria-label="GitHub"><i
+                            data-feather="github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-antonio-4ba035214/" aria-label="LinkedIn"><i
+                            data-feather="linkedin"></i></a></li>
+                <li><a href="https://wa.me/5531982448518?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Precisamos%20conversar!"
+                        aria-label="WhatsApp"><i data-feather="phone"></i></a></li>
                 <!-- <li><a href="" aria-label="Instagram"><i data-feather="instagram"></i></a></li> -->
             </ul>
             <div class="download-cv fade-in delay-3">
-                <a target="_blank" href="https://wa.me/5531982448518?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Precisamos%20conversar!" class="btn btn_download" download>Vamos conversar?</a>
+                <a target="_blank"
+                    href="https://wa.me/5531982448518?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Precisamos%20conversar!"
+                    class="btn btn_download" download>Vamos conversar?</a>
             </div>
             <p class="fade-in delay-3" style="margin-top: 30px;">© 2025 GA. Todos os direitos reservados.</p>
+            <p class="fade-in delay-3" style="font-size: 12px; margin-top: 30px;"><strong>Observação:</strong> Caso queira validar a autenticidade dos diplomas e certificados, entre em contato. Os mesmos não foram disponibilizados para a prevenção de fraudes.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="script.js"></script>
-    <script>
-        // Initialize Feather Icons
-        feather.replace();
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', function () {
-            navLinks.classList.toggle('active');
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                // Close mobile menu if open
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Scroll animations
-        function checkScroll() {
-            const elements = document.querySelectorAll('.fade-in');
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-
-                if (elementPosition < windowHeight - 100) {
-                    element.style.opacity = '1';
-                }
-            });
-        }
-
-        window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', checkScroll);
-
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            // Here you would typically send the form data to a server
-            console.log({ name, email, subject, message });
-
-            // Show success message
-            alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-
-            // Reset form
-            contactForm.reset();
-        });
-    </script>
-
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="email.js" ></script>
 </body>
 
 </html>
