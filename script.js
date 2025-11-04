@@ -68,15 +68,33 @@ hamburger.addEventListener('click', function () {
     navLinks.classList.toggle('active');
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
+        const target = document.querySelector(href);
+        if (!target) return;
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const startY = window.scrollY;
+        const targetY = target.getBoundingClientRect().top + startY;
+        const distance = targetY - startY;
+        const duration = 800;
+        let startTime = null;
 
-        navLinks.classList.remove('active');
+        function animateScroll(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const progress = currentTime - startTime;
+            const percent = Math.min(progress / duration, 1);
+            const ease = percent < 0.5
+                ? 2 * percent * percent
+                : -1 + (4 - 2 * percent) * percent;
+            window.scrollTo(0, startY + distance * ease);
+            if (progress < duration) requestAnimationFrame(animateScroll);
+            else history.replaceState(null, null, href);
+        }
+
+        requestAnimationFrame(animateScroll);
     });
 });
 
