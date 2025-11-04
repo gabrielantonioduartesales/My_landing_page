@@ -1,0 +1,100 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6C63FF;
+        --secondary: #857CFF;
+        --dark: #FFFFFF;
+        --light: #0F1021;
+        --accent: #9E98FF;
+        --card-bg: #1B1D3A;
+        --text-secondary: #B8B6FF;
+    }
+
+    body {
+        background-color: var(--light) !important;
+        color: var(--dark) !important;
+    }
+
+    p {
+        color: var(--dark) !important;
+    }
+
+    nav {
+        background-color: var(--light) !important;
+    }
+
+    nav.scrolled {
+        background-color: var(--light) !important;
+    }
+
+    .parallax {
+        background: linear-gradient(rgba(15, 16, 33, 0.85), rgba(15, 16, 33, 0.85)),
+            url('img/img_found.jpeg') no-repeat center center !important;
+        background-size: cover !important;
+    }
+
+    section,
+    #experience,
+    #certificates,
+    #contact {
+        background-color: var(--light) !important;
+    }
+
+    .timeline-content,
+    .project-card,
+    .certificate-card,
+    .contact-form {
+        background-color: var(--card-bg) !important;
+        color: var(--dark) !important;
+        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05) !important;
+    }
+
+    .timeline-content p,
+    .project-info p,
+    .certificate-card p {
+        color: var(--text-secondary) !important;
+    }
+
+    .btn,
+    .submit-btn {
+        background-color: var(--primary) !important;
+        color: white !important;
+    }
+
+    .btn:hover,
+    .submit-btn:hover {
+        background-color: var(--secondary) !important;
+    }
+
+    .section-title h2::after {
+        background-color: var(--primary) !important;
+    }
+
+    .tech-ticker {
+        box-shadow: 0 4px 20px rgba(134, 128, 255, 0.25) !important;
+    }
+
+    .tech-item {
+        background: rgba(134, 128, 255, 0.08) !important;
+    }
+
+    .tech-item:hover {
+        background: rgba(134, 128, 255, 0.15) !important;
+    }
+
+    footer {
+        background-color: var(--light) !important;
+        color: white !important;
+    }
+
+    .social-links a:hover {
+        color: var(--primary) !important;
+    }
+
+    .dot {
+        background-color: #3A3A5A !important;
+    }
+
+    .dot.active {
+        background-color: var(--primary) !important;
+    }
+}

@@ -8,12 +8,20 @@ function initEmailJS(formId, serviceID, templateID) {
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
+
+        const recaptchaResponse = grecaptcha.getResponse();
+        if (!recaptchaResponse) {
+            alert('Por favor, confirme que você não é um robô.');
+            return;
+        }
+
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 alert("Email enviado com sucesso !");
                 form.reset();
+                grecaptcha.reset();
             }, (error) => {
-                alert("Erro ao enviar e-mail, caso não consiga, entre em contato pelo link do whatsapp abaixo no botão: 'Vamos conversar' ");
+                alert("Erro ao enviar e-mail, caso não consiga, entre em contato pelo link do whatsapp abaixo no botão: 'Vamos conversar'");
             });
     });
 }
