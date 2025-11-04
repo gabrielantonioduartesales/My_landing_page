@@ -1,8 +1,8 @@
-D# 🌐 Portfólio — Gabriel Antonio Duarte Sales
+# 🌐 Portfólio — Gabriel Antonio Duarte Sales
 
 Bem-vindo ao repositório do meu **portfólio profissional**, desenvolvido para apresentar minhas **habilidades, projetos e contato direto** com empregadores e clientes.  
 O site foi feito com foco em **performance, responsividade, acessibilidade e interatividade.**
-
+Link do site: https://gabrielantonioduartesales.github.io/My_landing_page 
 ---
 
 ## 🧩 Tecnologias Utilizadas
