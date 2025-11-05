@@ -22,6 +22,7 @@ Feather Icons / Flaticon — Optimized vector icons
 GitHub Pages — Free website hosting
 
 ## 🧱 Folder & File Structure
+
 my_landing_page/
 ├── cv/                 # Resume PDF(s)
 ├── img/                # Images and graphic assets
