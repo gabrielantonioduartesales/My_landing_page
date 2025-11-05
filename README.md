@@ -1,135 +1,135 @@
-# 🌐 Portfólio — Gabriel Antonio Duarte Sales
+# 🌐 Portfolio — Gabriel Antonio Duarte Sales
 
-Bem-vindo ao repositório do meu **portfólio profissional**, desenvolvido para apresentar minhas **habilidades, projetos e contato direto** com empregadores e clientes.  
-O site foi feito com foco em **performance, responsividade, acessibilidade e interatividade.**
-Link do site: https://gabrielantonioduartesales.github.io/My_landing_page 
----
+Welcome to my professional portfolio repository, built to showcase my skills, projects, and direct contact with employers and clients.
+The website was developed with a focus on performance, responsiveness, accessibility, and interactivity.
 
-## 🧩 Tecnologias Utilizadas
+## 🔗 Live site: https://gabrielantonioduartesales.github.io/My_landing_page
 
-- **HTML5** — Estrutura semântica do site  
-- **CSS3** — Layout responsivo, animações e design moderno  
-- **JavaScript (ES6)** — Funcionalidades dinâmicas (carrossel, rolagem suave, ticker e integração com EmailJS)  
-- **EmailJS** — Envio de e-mails direto pelo formulário de contato  
-- **Google reCAPTCHA v2** — Proteção contra spam  
-- **Feather Icons / Flaticon** — Ícones vetoriais otimizados  
-- **GitHub Pages** — Hospedagem gratuita do site  
+## 🧩 Technologies Used
 
----
+HTML5 — Semantic site structure
 
-## 🧱 Estrutura de Pastas e Arquivos
+CSS3 — Responsive layout, animations, and modern design
 
-```
+JavaScript (ES6) — Dynamic features (carousel, smooth scrolling, ticker, and EmailJS integration)
+
+EmailJS — Send emails directly from the contact form
+
+Google reCAPTCHA v2 — Spam protection
+
+Feather Icons / Flaticon — Optimized vector icons
+
+GitHub Pages — Free website hosting
+
+## 🧱 Folder & File Structure
 my_landing_page/
-├── cv/ # PDF(s) do currículo
-├── img/ # Imagens e assets gráficos
-├── email.js # Integração EmailJS (formulário)
-├── en_inser.js # Traduções / inserções em inglês
-├── index_en.html # Versão em inglês (landing)
-├── index_pt.html # Versão em português (landing)
-├── index.html # Entrada padrão
+├── cv/                 # Resume PDF(s)
+├── img/                # Images and graphic assets
+├── email.js            # EmailJS integration (contact form)
+├── en_inser.js         # English content and inserts
+├── index_en.html       # English version (landing)
+├── index_pt.html       # Portuguese version (landing)
+├── index.html          # Default entry file
 ├── LICENSE
-├── media_colors.css # Variantes / overrides de cores
-├── media_portrait.css # Regras para portrait / mobile
-├── pt_inser.js # Traduções / inserções em português
-├── README.md # Este arquivo (edite conforme necessário)
-├── script.js # Lógica: carrossel, ticker, scroll suave
-└── style.css # Estilos principais
-```
+├── media_colors.css    # Color variants / overrides
+├── media_portrait.css  # Portrait / mobile rules
+├── pt_inser.js         # Portuguese content and inserts
+├── README.md           # This file (edit as needed)
+├── script.js           # Logic: carousel, ticker, smooth scroll
+└── style.css           # Main styles
 
----
+## ⚙️ Main Features
+## 🎠 Interactive Carousel
 
-## ⚙️ Funcionalidades Principais
+Navigation with next/previous buttons
 
-### 🎠 Carrossel Interativo
-- Navegação com botões de **avançar e voltar**
-- Indicadores (dots) sincronizados  
-- Transição suave entre slides
+Synced slide indicators (dots)
 
-### 🧾 Ticker de Tecnologias
-- Mostra ícones de **skills técnicas**
-- Pausa automaticamente ao passar o mouse
+Smooth transition effects
 
-### 🧭 Navbar Inteligente
-- Fixa e muda de estilo ao rolar a página (`.scrolled`)
-- Menu hambúrguer responsivo para mobile
+## 🧾 Technology Ticker
 
-### ⬇️ Scroll Suave entre Seções
-- Animação de rolagem com easing customizado
-- Atualiza o `hash` na URL ao fim da animação
+Displays icons of technical skills
 
-### ✉️ Formulário de Contato
-- Integração com **EmailJS**
-- Protegido com **Google reCAPTCHA**
-- Exibe mensagens de sucesso e erro personalizadas
+Automatically pauses on hover
 
-### 🕊️ Animações de Entrada (Fade-in)
-- Elementos aparecem suavemente ao entrar no campo de visão do usuário
+## 🧭 Smart Navbar
 
----
+Fixed and style-changing on scroll (.scrolled)
 
-## 🚀 Como Executar Localmente
+Responsive hamburger menu for mobile
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/gabrielantonioduartesales/My_landing_page.git
-   ```
+## ⬇️ Smooth Section Scrolling
 
-2. Acesse a pasta:
-   ```bash
-   cd My_landing_page
-   ```
+Custom easing animation
 
-3. Abra o arquivo `index.html` diretamente no navegador.
+Updates URL hash after animation
 
-> 💡 Dica: Para evitar erros de `EmailJS` e `reCAPTCHA`, esses serviços só funcionarão corretamente **em ambiente online (GitHub Pages ou domínio próprio)**.
+## ✉️ Contact Form
 
----
+Integrated with EmailJS
 
-## ☁️ Publicação no GitHub Pages
+Protected with Google reCAPTCHA
 
-1. No repositório do GitHub, vá em:  
-   **Settings → Pages → Source → `main` branch → /root**  
+Custom success and error messages
 
-2. Clique em **Save**.  
-3. O site ficará disponível em:  
-   ```
-   https://gabrielantonioduartesales.github.io/My_landing_page/
-   ```
+## 🕊️ Entry Animations (Fade-in)
 
----
+Elements smoothly appear when entering the viewport
 
-## 📎 Currículo para Download
+## 🚀 Run Locally
 
-O botão “Baixar” no site utiliza o atributo `download`:
-```html
+Clone the repository:
+
+git clone https://github.com/gabrielantonioduartesales/My_landing_page.git
+
+
+Access the folder:
+
+cd My_landing_page
+
+
+Open the file index.html directly in your browser.
+
+## 💡 Tip: To avoid EmailJS or reCAPTCHA errors, these services work properly only in an online environment (e.g., GitHub Pages or your own domain).
+
+## ☁️ Publishing on GitHub Pages
+
+In your GitHub repository:
+Settings → Pages → Source → main branch → /root
+Then click Save.
+
+## Your website will be available at:
+### 👉 https://gabrielantonioduartesales.github.io/My_landing_page/
+
+## 📎 Resume Download
+
+The “Download” button uses the HTML download attribute:
+
 <a href="cv/CV_Gabriel_Antonio_Duarte_Sales.pdf" download>
-    <i data-feather="download"></i> Baixar
+    <i data-feather="download"></i> Download
 </a>
-```
 
----
+## 🧠 Future Improvements
 
-## 🧠 Melhorias Futuras
+Add automatic dark mode
 
-- Adicionar modo escuro automático (dark mode)  
-- Criar seção de projetos com cards animados  
-- Conectar o formulário a um backend alternativo (ex: Node.js)  
-- Adicionar transições usando Framer Motion ou GSAP  
+Create a project section with animated cards
 
----
+Connect the contact form to a Node.js backend
 
-## 👨‍💻 Autor
+Add transitions using Framer Motion or GSAP
 
-**Gabriel Antonio Duarte Sales**  
-📍 Minas Gerais, Brasil  
-💼 Professor de TI no SENAC | Analista e Desenvolvedor de Sistemas  
-📧 [gabriel_27duarte@outlook.com](mailto:gabriel_27duarte@outlook.com)  
-🌐 [Portfólio Online](https://gabrielantonioduartesales.github.io/My_landing_page)
+## 👨‍💻 Author
 
----
+Gabriel Antonio Duarte Sales
+📍 Minas Gerais, Brazil
+💼 IT Instructor at SENAC | Systems Analyst & Developer
+📧 gabriel_27duarte@outlook.com
 
-## 📜 Licença
+ 🌐 Online Portfolio
 
-Este projeto é de uso **pessoal e educacional**, podendo ser adaptado com créditos ao autor.  
+## 📜 License
+
+This project is for personal and educational use, and may be adapted with proper credit to the author.
 © 2025 — Gabriel Antonio Duarte Sales
