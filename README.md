@@ -4,7 +4,6 @@ Welcome to my professional portfolio repository, built to showcase my skills, pr
 The website was developed with a focus on performance, responsiveness, accessibility, and interactivity.
 
 ## 🔗 Live site: https://gabrielantonioduartesales.github.io/My_landing_page
-
 ## 🧩 Technologies Used
 
 HTML5 — Semantic site structure
