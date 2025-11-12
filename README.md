@@ -3,7 +3,7 @@
 Welcome to my professional portfolio repository, built to showcase my skills, projects, and direct contact with employers and clients.
 The website was developed with a focus on performance, responsiveness, accessibility, and interactivity.
 
-## 🔗 Live site: https://gabrielantonioduartesales.github.io/My_landing_page](https://gabrielmustacheprogrammer.github.io/My_landing_page/
+## 🔗 Live site: https://gabrielantonioduartesales.github.io/My_landing_page
 ## 🧩 Technologies Used
 
 HTML5 — Semantic site structure
